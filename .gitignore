@@ -1,0 +1,15 @@
+# Ignore IDEs' settings and tmps
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+[._]*.un~
+*~
+
+.vscode/*
+.history/
+
+# ...and OSs' settings and tmps.
+.DS_Store
+._*
