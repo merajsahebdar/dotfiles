@@ -1,0 +1,49 @@
+format = """
+$username\
+$hostname\
+$localip\
+$directory\
+$fossil_branch\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$hg_branch\
+$memory_usage\
+$env_var\
+$custom\
+$sudo\
+$jobs\
+$battery\
+$time\
+$status\
+$os\
+$container\
+$shell\
+$character"""
+command_timeout = 1000
+
+[directory]
+truncation_length = 3
+format = "[$read_only]($read_only_style)[$path]($style) "
+style = "bold"
+read_only = 'readonly '
+read_only_style = "bold red"
+
+[git_branch]
+symbol = ""
+style = "bold"
+
+[git_status]
+conflicted = "="
+ahead = "A${count}"
+behind = "${count}B"
+diverged = "A${ahead_count}·${behind_count}B"
+untracked = "?"
+stashed = "#"
+modified = "!"
+staged = '[++\($count\)](green)'
+renamed = "[.](yellow)"
+deleted = "[-](red)"
+style = "bold"
