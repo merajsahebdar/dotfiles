@@ -1,1 +1,1 @@
-alias mkworkshop='cd (mktemp -d /tmp/workshop-XXXXXXXX)'
+alias mkworkshop='cd (mktemp -d /tmp/workshop-(date +%s)-XXXXXXXX)'
