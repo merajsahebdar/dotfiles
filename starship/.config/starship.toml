@@ -31,6 +31,11 @@ style = "bold"
 read_only = 'readonly '
 read_only_style = "bold red"
 
+[[battery.display]]
+threshold = 10
+style = "bold red"
+discharging_symbol = ":.."
+
 [git_branch]
 symbol = ""
 style = "bold"
